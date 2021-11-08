@@ -22,15 +22,17 @@
         <div style="display: flex;" class="time-laps">
         <div class="stopwatch">
             <div class="time">
-                <span>00:00:00</span>
+                00:00:00:00
             </div>
             <div class="buttons">
-                <button class="option">Start</button>
-                <button class="option">Lap</button>
-                <button class="option">Stop</button>
+                <button onclick="start()" class="option">Start</button>
+                <button onclick="lap()" class="option">Lap</button>
+                <button onclick="stop()"class="option">Stop</button>
             </div>
         </div>
-        <div class="laps"></div>
+        <div class="laps">
+            <h3>Laps</h3>
+        </div>
     </div>
     </div>
     <script src="script.js"></script>

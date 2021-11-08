@@ -34,3 +34,14 @@ function lap(){
                                                     <span class="lap-time">${document.querySelector('.time').innerHTML}</span>
                                                 </div>  `
 }
+
+function reset(){
+    stop();
+    cent = 0;
+    sec = 0;   
+    min = 0;
+    hr = 0;
+    lapn = 0;
+    document.querySelector('.laps').innerHTML = `<h3>Laps</h3>`;
+    document.querySelector('.time').innerHTML = `00:00:00:00`;
+}

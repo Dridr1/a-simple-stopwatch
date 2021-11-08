@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -76,6 +80,7 @@ h1{
     align-items: center;
     margin: 25px 25px 0 0;
     padding: 0 18px ;
+    overflow-y: auto;
 }
 
 .buttons{

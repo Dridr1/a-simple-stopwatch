@@ -4,12 +4,12 @@ let cent = 0,
     hr = 0,
     lapn = 0,
     idInterval;
-function start(){
-    idInterval = setInterval(increaseTime, 10)
+function start(button){
+    idInterval = setInterval(increaseTime, 10);
+    button.setAttribute("disabled","disabled");
 }
 function increaseTime(){
     cent++;
-    
     if(cent===100){
         cent = 0;
         sec++;
@@ -26,6 +26,8 @@ function increaseTime(){
 }
 function stop(){
     clearInterval(idInterval);
+    document.querySelector('.start-button').removeAttribute("disabled");
+
 }
 function lap(){
     lapn++;
@@ -34,7 +36,6 @@ function lap(){
                                                     <span class="lap-time">${document.querySelector('.time').innerHTML}</span>
                                                 </div>  `
 }
-
 function reset(){
     stop();
     cent = 0;

@@ -19,22 +19,22 @@
         <header>
             <h1>STOPWATCH</h1>
         </header>
-        <div style="display: flex;" class="time-laps">
-        <div class="stopwatch">
-            <div class="time">
-                00:00:00:00
+        <div class="time-laps">
+            <div class="stopwatch">
+                <div class="time">
+                    00:00:00:00
+                </div>
+                <div class="buttons">
+                    <button onclick="start(this)" class="start-button">Start</button>
+                    <button onclick="lap()" class="lap-button">Lap</button>
+                    <button onclick="stop()" class="stop-button">Stop</button>
+                    <button onclick="reset()" class="reset-button">Reset</button>
+                </div>
             </div>
-            <div class="buttons">
-                <button onclick="start(this)" class="start-button">Start</button>
-                <button onclick="lap()" class="lap-button">Lap</button>
-                <button onclick="stop()" class="stop-button">Stop</button>
-                <button onclick="reset()" class="reset-button">Reset</button>
+            <div class="laps">
+                <h3>Laps</h3>
             </div>
         </div>
-        <div class="laps">
-            <h3>Laps</h3>
-        </div>
-    </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -5,8 +5,11 @@
 ::-webkit-scrollbar{
     display: none;
 }
-
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +23,7 @@ body{
     flex-direction: column;
 }
 header{
-    width: 618px;
+    width: 97.3%;
     height: 95px;
     background: #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -81,6 +84,7 @@ h1{
     margin: 25px 25px 0 0;
     padding: 0 18px ;
     overflow-y: auto;
+    padding-top: 25px;
 }
 
 .buttons{
@@ -110,6 +114,7 @@ h3{
     font-size: 22px;
     line-height: 21px;
     color: dimgray;
+    margin-bottom: 25px;
 }
 .lap{
     width: 100%;
@@ -120,4 +125,7 @@ h3{
     line-height: 21px;
     display: flex;
     justify-content: space-between;
+}
+.time-laps{
+    display: flex;
 }

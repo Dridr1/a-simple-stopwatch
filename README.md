@@ -1,6 +1,6 @@
 # A simple stopwatch using pure JavaScript.
 ### About the application
-This is a simple stopwatch using pure JavaScript I did to train git and some basic JS functions. It only has a desktop layout, bat later I'll add a responsive design.
+This is a simple stopwatch using pure JavaScript I did to train git and some basic JS functions. It only has a desktop layout, but later I'll add a responsive design.
 
 ### Features
 * Count time
